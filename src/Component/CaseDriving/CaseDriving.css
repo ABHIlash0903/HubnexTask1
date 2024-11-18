@@ -1,0 +1,53 @@
+.driving-full{
+    padding: 50px 6%;
+}
+.driving-users{
+    text-align: center;
+    margin: 50px 0px;
+}
+.driving-users h3{
+    font-size: 14px;
+    font-weight: 600;
+   color: #1D4ED8;
+
+}
+.driving-users h2{
+    font-size: 36px;
+    font-weight:600 ;
+}
+.second-parts{
+ 
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    margin:50px 0px;
+    
+}
+.part1 img{
+    width: 300px;
+    height: 300px;
+}
+.part2{
+    width: 60%;
+}
+.part2 h3{
+    font-size: 35px;
+    font-weight: 500;
+    width: 800px;
+    height: 114px;
+    margin: 20px 0px;
+}
+.part2 p{
+    font-size: 20px;
+    font-weight: 400;
+    color:  #52525B; 
+    width: 800px;
+    margin-bottom: 30px;
+}
+.part2 h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.part2 h4{
+    font-weight: 300;
+}

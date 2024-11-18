@@ -8,36 +8,28 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RxArrowTopRight } from "react-icons/rx";
 const CaseStudy = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  };
   const data = [
     {
-      
       img: `/public/Frame 603.png`,
-      
     },
     {
-      
       img: `public/Frame 602.png`,
-      
     },
-    
+
     {
-      
       img: `public/Frame 603.png`,
-     
     },
     {
-     
       img: `public/Frame 602.png`,
-     
     },
-    
+
   ];
   return (
     <div className='main-blogs-container'>
@@ -45,19 +37,19 @@ const CaseStudy = () => {
         <h2>Case Study</h2>
         <p>We guide global businesses through the challenges of developing purposeful technology that addresses their needs and advances their growth. We have established offices in India, the UAE, and the USA.</p>
         <button className="view">
-        View All
-        <FaArrowRightLong />
+          View All
+          <FaArrowRightLong />
         </button>
       </div>
       <div className='w-3/4 m-auto main-bg-card'>
         <div className='mt-20'>
-        <Slider {...settings}>
-          {data.map((d) => (
-            <div className='blogs-card-content'>
-              <div className='my-img-blogs'>
-                <img src={d.img} alt='' />
-              </div>
-              {/* <div className='my-text-blogs'>
+          <Slider {...settings}>
+            {data.map((d) => (
+              <div className='blogs-card-content'>
+                <div className='my-img-blogs'>
+                  <img src={d.img} alt='' />
+                </div>
+                {/* <div className='my-text-blogs'>
                 <h3>{d.area}</h3>
                 <h1>{d.heading}</h1>
                 <p>{d.msg}</p>
@@ -66,8 +58,8 @@ const CaseStudy = () => {
                   <RxArrowTopRight />
                 </button>
               </div> */}
-            </div>
-          ))}
+              </div>
+            ))}
           </Slider>
         </div>
       </div>

@@ -1,8 +1,7 @@
 
-/** @format */
 .main-contact {
     margin-top: 2rem;
-    width: 100vw;
+    width: 100%;
   }
   .Contact-upper {
     background: linear-gradient(to right, #000000, #202020, #414141, #5d5c5c);
@@ -40,14 +39,14 @@
     font-size: 35px;
     font-weight: bold;
   }
-  .contactt {
+  .contact {
     background-color: black;
     color: white;
     border-radius: 26px;
     padding: 6px 12px;
     margin-right: 1rem;
   }
-  .horizontal-linee {
+  .horizontal-line {
     width: 80vw;
     margin: auto;
     border: none;

@@ -1,7 +1,7 @@
 
 const CaseHome = () => {
     return (
-        <div>
+        <div className="p-10">
             <div className="flex items-center space-x-4 p-4 bg-white-100">
                 <div className="text-gray-600 cursor-pointer">Home <span className="ml-1">&gt;</span></div>
                 <div className="text-gray-600 cursor-pointer">Blogs <span className="ml-1">&gt;</span></div>
@@ -20,20 +20,20 @@ const CaseHome = () => {
                     <div className="flex p-6 space-x-4">
                         {/* First Column */}
                         <div className="w-1/3 bg-gray-100 p-4 rounded-md">
-                            <h2 className="text-lg font-bold">Column 1</h2>
-                            <p>This is the first column content. Add any text or information you need here.</p>
+                            <h2 className="text-lg font-bold"> 1</h2>
+                            <p> content </p>
                         </div>
 
                         {/* Second Column */}
                         <div className="w-1/3 bg-gray-100 p-4 rounded-md">
-                            <h2 className="text-lg font-bold">Column 2</h2>
-                            <p>This is the second column content. Add any text or information you need here.</p>
+                            <h2 className="text-lg font-bold"> 2</h2>
+                            <p>content</p>
                         </div>
 
                         {/* Third Column */}
                         <div className="w-1/3 bg-gray-100 p-4 rounded-md">
-                            <h2 className="text-lg font-bold">Column 3</h2>
-                            <p>This is the third column content. Add any text or information you need here.</p>
+                            <h2 className="text-lg font-bold"> 3</h2>
+                            <p>content</p>
                         </div>
                     </div>
 

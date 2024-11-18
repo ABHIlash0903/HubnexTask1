@@ -13,39 +13,25 @@ import CaseConclusion from './Component/CaseConclusion/CaseConclusion';
 
 
 function App() {
-  
+
 
   return (
     <div>
-        
+
       <Header></Header>
       <CaseHome></CaseHome>
       <CaseBusinessChallenge></CaseBusinessChallenge>
       <CaseOurSolution></CaseOurSolution>
       <CaseImpact></CaseImpact>
       <CaseConclusion></CaseConclusion>
-    
+      <CaseStudy></CaseStudy>
+      <CaseDriving></CaseDriving>
+      <CaseContact></CaseContact>
+      <Footer></Footer>
 
-    
-
-
-   
-
-
-   
-
-
-
-
-    
-    <CaseStudy></CaseStudy>
-    <CaseDriving></CaseDriving>
-    <CaseContact></CaseContact>
-    <Footer></Footer>
-      
     </div>
 
-    
+
   )
 }
 

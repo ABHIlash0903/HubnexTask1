@@ -13,9 +13,9 @@ const CaseContact = () => {
       <div className='Contact-lower'>
         <h1>Let’s grow 💪 <br />
         together with the faster ecosystem</h1>
-        <button className="contactt">Contact Us<FaArrowRightLong /></button>
+        <button className="contact">Contact Us<FaArrowRightLong /></button>
       </div>
-      <div className='horizontal-linee'></div>
+      <div className='horizontal-line'></div>
     </div>
      
   );

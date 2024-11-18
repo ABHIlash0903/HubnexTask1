@@ -4,11 +4,13 @@
     
     width: 100%;
     margin-top: 5rem;
-    height: 145vh;
+    height: 135vh;
     background: linear-gradient(to top right, #000912, #04265e, #245484);
+    
   }
   .blogs-title {
     text-align: center;
+    padding: 40px;
   }
   .blogs-title h2 {
     margin-top: 2rem;

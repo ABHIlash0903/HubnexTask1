@@ -1,7 +1,7 @@
 
 const CaseConclusion = () => {
     return (
-        <div>
+        <div className="p-10">
             <div className="w-full p-6 bg-white-100">
                 <h2 className="text-2xl font-bold text-gray-800">
                     Conclusion
