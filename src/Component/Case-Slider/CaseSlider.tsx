@@ -1,7 +1,4 @@
-
-/** @format */
 import React, { useRef } from "react";
-import "./CaseSlider.css";
 
 const CaseSlider: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -32,66 +29,52 @@ const CaseSlider: React.FC = () => {
   };
 
   return (
-    <>
-      <div className='slider-main-heading'>
-        <p>3940+ Happy Hubnex Labs Users</p>
-        <h1>Driving results for leaders across the globe</h1>
+    <div className="py-10">
+      <div className="text-center space-y-2">
+        <p className="text-sm text-blue-600">3940+ Happy Hubnex Labs Users</p>
+        <h1 className="text-2xl md:text-3xl font-bold">
+          Driving results for leaders across the globe
+        </h1>
       </div>
+
       <div
-        className='slider-container'
         ref={sliderRef}
+        className="relative flex gap-4 overflow-x-auto max-w-5xl mx-auto mt-10 p-4 scrollbar-hide scroll-snap-x"
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
-        <div className='slider-item'>
-          <div className='left'>
-            <img src='/public/slack_BG.png' alt='' />
+        {[...Array(3)].map((_, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-full md:w-4/5 lg:w-2/3 scroll-snap-center bg-blue-100 rounded-lg shadow-lg p-5 space-y-4"
+          >
+            <div className="flex flex-col md:flex-row items-center md:space-x-8">
+              <img
+                src={`/public/example${index + 1}.png`}
+                alt={`example ${index + 1}`}
+                className="w-full md:w-1/2 h-auto rounded-lg object-cover"
+              />
+              <div className="space-y-2 text-center md:text-left">
+                <h1 className="text-xl md:text-2xl font-semibold">
+                  Driving results for leaders across the globe
+                </h1>
+                <p className="text-sm text-gray-600">
+                  “With Landingfolio, the design team can now build designs that
+                  identify employees’ career aspirations and goals, helping
+                  managers to understand and act accordingly.”
+                </p>
+                <div>
+                  <h2 className="text-lg font-bold">Example Company</h2>
+                  <p className="text-sm text-gray-500">Product Company</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className='right'>
-            <h1>Driving results for leaders across the globe</h1>
-            <p>
-              “With Landingfolio, the design team can now build design which
-              identifies employees’ career aspirations and goals and from which
-              we approach managers and check to see what is happening.”
-            </p>
-            <h1>Slack</h1>
-            <p>Product Company</p>
-          </div>
-        </div>
-        <div className='slider-item'>
-          <div className='left'>
-            <img src='/public/facebookimg.png' alt='' />
-          </div>
-          <div className='right'>
-            <h1>Driving results for leaders across the globe</h1>
-            <p>
-              “With Landingfolio, the design team can now build design which
-              identifies employees’ career aspirations and goals and from which
-              we approach managers and check to see what is happening.”
-            </p>
-            <h1>Facebook</h1>
-            <p>Product Company</p>
-          </div>
-        </div>
-        <div className='slider-item'>
-          <div className='left'>
-            <img src='/public/googleimg.png' alt='' />
-          </div>
-          <div className='right'>
-            <h1>Driving results for leaders across the globe</h1>
-            <p>
-              “With Landingfolio, the design team can now build design which
-              identifies employees’ career aspirations and goals and from which
-              we approach managers and check to see what is happening.”
-            </p>
-            <h1>Google</h1>
-            <p>Product Company</p>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

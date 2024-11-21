@@ -1,0 +1,9 @@
+.circular-progress{
+    max-width: 8vw !important;
+    max-height: 14vh;
+ 
+}
+.full-container{
+    background-color: brown !important;
+    display: flex;
+}

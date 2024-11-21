@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import AnimatedCircularProgressBar from "./CaseImpact";
+import AnimatedCircularProgressBar from "@/components/magicui/animated-circular-progress-bar";
 
 export function AnimatedCircularProgressBarDemo() {
   const [value, setValue] = useState(0);
@@ -29,5 +29,3 @@ export function AnimatedCircularProgressBarDemo() {
     />
   );
 }
-
-export default AnimatedCircularProgressBarDemo;

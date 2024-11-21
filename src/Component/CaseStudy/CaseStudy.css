@@ -21,6 +21,9 @@
   .blogs-title p {
     color: white;
     font-weight: 100;
+    font-size: 20px;
+    padding: 20px;
+    
   }
  
   .blogs-card-content {
